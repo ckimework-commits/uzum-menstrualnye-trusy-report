@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Менструальные трусы на Uzum — стоит ли заходить · инвест-заметка</title>
+<style>  :root{
+    --paper:#f4f6f5; --surface:#ffffff; --surface-2:#fbfcfb;
+    --ink:#15181c; --muted:#5b646b; --faint:#8b939a; --line:#e3e6e5;
+    --accent:#0f766e; --accent-ink:#0a534d; --accent-soft:#d8ebe7;
+    --good:#15803d; --good-bg:#e5f2e8; --warn:#b45309; --warn-bg:#f7ecd8;
+    --bad:#b91c1c; --bad-bg:#f6e0df;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+    --wrap:860px;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --paper:#0f1214; --surface:#171b1e; --surface-2:#12161a;
+      --ink:#e9edee; --muted:#9aa4ab; --faint:#6b757c; --line:#262c30;
+      --accent:#2dd4bf; --accent-ink:#7ee7d8; --accent-soft:#123a35;
+      --good:#4ade80; --good-bg:#12241a; --warn:#fbbf24; --warn-bg:#2a2110;
+      --bad:#f87171; --bad-bg:#2a1514;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0f1214; --surface:#171b1e; --surface-2:#12161a;
+    --ink:#e9edee; --muted:#9aa4ab; --faint:#6b757c; --line:#262c30;
+    --accent:#2dd4bf; --accent-ink:#7ee7d8; --accent-soft:#123a35;
+    --good:#4ade80; --good-bg:#12241a; --warn:#fbbf24; --warn-bg:#2a2110;
+    --bad:#f87171; --bad-bg:#2a1514;
+  }
+  :root[data-theme="light"]{
+    --paper:#f4f6f5; --surface:#ffffff; --surface-2:#fbfcfb;
+    --ink:#15181c; --muted:#5b646b; --faint:#8b939a; --line:#e3e6e5;
+    --accent:#0f766e; --accent-ink:#0a534d; --accent-soft:#d8ebe7;
+    --good:#15803d; --good-bg:#e5f2e8; --warn:#b45309; --warn-bg:#f7ecd8;
+    --bad:#b91c1c; --bad-bg:#f6e0df;
+  }
+  *{box-sizing:border-box}
+  body{margin:0}
+  .doc{font-family:var(--sans);color:var(--ink);background:var(--paper);
+    line-height:1.6;-webkit-font-smoothing:antialiased;padding:0 20px 96px}
+  .col{max-width:var(--wrap);margin:0 auto}
+  .num{font-family:var(--mono);font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}
+
+  .masthead{border-bottom:2px solid var(--ink);padding:40px 0 18px;margin-bottom:8px}
+  .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--accent-ink);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  .kicker .dot{width:6px;height:6px;border-radius:50%;background:var(--accent)}
+  h1{font-size:34px;line-height:1.12;font-weight:700;letter-spacing:-.02em;margin:14px 0 8px;text-wrap:balance}
+  .dek{font-size:17px;color:var(--muted);max-width:62ch;margin:0}
+  .meta{display:flex;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:12.5px;color:var(--faint);font-family:var(--mono)}
+
+  h2{font-size:13px;font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;
+    color:var(--accent-ink);margin:0 0 16px;padding-top:8px}
+  section{padding:36px 0;border-bottom:1px solid var(--line)}
+  h3{font-size:20px;font-weight:650;letter-spacing:-.01em;margin:0 0 6px}
+  p{margin:0 0 12px;max-width:66ch}
+  a.src{color:inherit;text-decoration:none;border-bottom:1px dotted var(--accent);
+    white-space:nowrap;transition:background .12s}
+  a.src::after{content:"\2197";font-size:.72em;vertical-align:.35em;color:var(--accent);margin-left:1px}
+  a.src:hover{background:var(--accent-soft)}
+  strong{font-weight:650}
+
+  .verdict{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--warn);
+    border-radius:12px;padding:22px 24px;display:flex;gap:22px;flex-wrap:wrap;align-items:flex-start}
+  .verdict .badge{font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--warn);background:var(--warn-bg);padding:5px 11px;border-radius:20px;white-space:nowrap}
+  .verdict-good{border-left-color:var(--good)}
+  .verdict-good .badge{color:var(--good);background:var(--good-bg)}
+  .verdict-warn{border-left-color:var(--warn)}
+  .verdict-warn .badge{color:var(--warn);background:var(--warn-bg)}
+  .verdict-bad{border-left-color:var(--bad)}
+  .verdict-bad .badge{color:var(--bad);background:var(--bad-bg)}
+  .verdict .vtext{flex:1;min-width:260px}
+  .verdict h3{margin:0 0 6px;font-size:19px}
+  .verdict p{margin:0;color:var(--muted);font-size:15px}
+
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  @media(max-width:640px){.kpis{grid-template-columns:repeat(2,1fr)}}
+  .kpi{background:var(--surface);border:1px solid var(--line);border-radius:11px;padding:16px 16px 14px}
+  .kpi .lbl{font-size:12px;color:var(--muted);margin-bottom:8px}
+  .kpi .big{font-family:var(--mono);font-size:23px;font-weight:600;letter-spacing:-.01em}
+  .kpi .sub{font-family:var(--mono);font-size:12px;color:var(--faint);margin-top:3px}
+  .kpi .sub.dn{color:var(--bad)}
+  .kpi .sub.up{color:var(--good)}
+
+  .dims{display:flex;flex-direction:column;gap:2px;margin-top:6px}
+  .dim{display:grid;grid-template-columns:14px 210px 1fr;gap:12px;align-items:start;
+    padding:11px 0;border-top:1px solid var(--line)}
+  .dim:first-child{border-top:none}
+  .sdot{width:11px;height:11px;border-radius:50%;margin-top:5px}
+  .sdot.g{background:var(--good)} .sdot.a{background:var(--warn)} .sdot.r{background:var(--bad)}
+  .dim .dname{font-weight:600;font-size:14.5px}
+  .dim .dnote{color:var(--muted);font-size:14px}
+  @media(max-width:620px){.dim{grid-template-columns:14px 1fr}.dim .dnote{grid-column:2}}
+
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:11px;background:var(--surface)}
+  table{border-collapse:collapse;width:100%;font-size:14px;min-width:520px}
+  th,td{text-align:right;padding:11px 14px;border-bottom:1px solid var(--line);white-space:nowrap}
+  th:first-child,td:first-child{text-align:left;white-space:normal}
+  thead th{font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;
+    color:var(--muted);font-weight:600;background:var(--surface-2)}
+  tbody tr:last-child td{border-bottom:none}
+  td.n,th.n{font-family:var(--mono);font-variant-numeric:tabular-nums}
+  tr.lead td{background:var(--accent-soft)}
+  .rev{font-family:var(--mono);color:var(--accent-ink);font-weight:600}
+
+  .finds{display:flex;flex-direction:column;gap:14px}
+  .find{display:grid;grid-template-columns:30px 1fr;gap:14px;align-items:start}
+  .find .fn{font-family:var(--mono);font-size:15px;color:var(--accent);font-weight:600;padding-top:1px}
+  .find .ft{font-weight:650;font-size:15.5px;margin-bottom:2px}
+  .find p{margin:0;color:var(--muted);font-size:14.5px}
+
+  .pl th.n,.pl td.n{min-width:104px}
+  td.pos{color:var(--good);font-weight:600} td.neg{color:var(--bad);font-weight:600}
+  .pct{color:var(--faint);font-size:12px}
+
+  .calc{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px;margin-top:6px}
+  .calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  @media(max-width:640px){.calc-grid{grid-template-columns:1fr}}
+  .inputs{display:flex;flex-direction:column;gap:14px}
+  .field{display:grid;grid-template-columns:1fr auto;align-items:center;gap:10px}
+  .field label{font-size:13.5px;color:var(--muted)}
+  .field .unit{font-family:var(--mono);font-size:11px;color:var(--faint)}
+  .field input{font-family:var(--mono);font-size:15px;width:112px;text-align:right;
+    padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface-2);color:var(--ink)}
+  .field input:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:transparent}
+  .outs{display:flex;flex-direction:column;gap:12px;justify-content:center;
+    border-left:1px solid var(--line);padding-left:26px}
+  @media(max-width:640px){.outs{border-left:none;padding-left:0;border-top:1px solid var(--line);padding-top:18px}}
+  .out{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+  .out .ol{font-size:13.5px;color:var(--muted)}
+  .out .ov{font-family:var(--mono);font-size:22px;font-weight:600;font-variant-numeric:tabular-nums}
+  .out.hero .ov{font-size:27px}
+  .calc-note{font-size:12.5px;color:var(--faint);margin:16px 0 0;font-family:var(--mono);line-height:1.5}
+
+  .heat td.c{font-family:var(--mono);font-variant-numeric:tabular-nums;font-weight:600;text-align:center;color:#0c0f12}
+  .heat td.hg{background:var(--good)} .heat td.ha{background:var(--warn)} .heat td.hr{background:var(--bad)}
+  .heat th{text-align:center} .heat th:first-child,.heat td:first-child{text-align:left;color:var(--ink)}
+  .legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px;font-size:12.5px;color:var(--muted);font-family:var(--mono)}
+  .legend span{display:inline-flex;align-items:center;gap:6px}
+  .legend i{width:11px;height:11px;border-radius:3px;display:inline-block}
+
+  .call{background:var(--surface-2);border:1px solid var(--line);border-radius:11px;padding:18px 20px;margin-top:16px}
+  .call .ct{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+  ul{margin:8px 0 0;padding-left:20px;color:var(--muted);font-size:14.5px}
+  li{margin-bottom:7px}
+
+  .srclist{display:flex;flex-direction:column;gap:0}
+  .srcrow{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:center;
+    padding:13px 0;border-top:1px solid var(--line)}
+  .srcrow:first-child{border-top:none}
+  .srcrow .sl{font-size:14.5px}
+  .srcrow .sl small{display:block;color:var(--faint);font-size:12.5px;font-family:var(--mono);margin-top:2px}
+  .srcrow a{font-family:var(--mono);font-size:12.5px;color:var(--accent-ink);text-decoration:none;
+    border:1px solid var(--line);padding:6px 12px;border-radius:20px;white-space:nowrap}
+  .srcrow a:hover{background:var(--accent-soft);border-color:var(--accent)}
+  .foot{padding-top:26px;color:var(--faint);font-size:12.5px;font-family:var(--mono);line-height:1.6}
+</style>
+</head>
+<body>
+<div class="doc"><div class="col">
+<header class="masthead">
+    <div class="kicker"><span class="dot"></span> Uzum · ниша «менструальные трусы» · инвест-заметка</div>
+    <h1>Стоит ли заходить в менструальные трусы — микро-ниша на взлёте</h1>
+    <p class="dek">Разбор ниши «менструальные трусы» на Uzum Market: ёмкость, годовая динамика, конкуренты, поисковый спрос и юнит-экономика. Ниша микроскопическая по деньгам (≈ $4,1k/мес), но растёт трёхзначно год к году и почти не занята. Каждая цифра кликается в источник — отчёт ZoomSelling или карточку на Uzum.</p>
+    <div class="meta"><span>Снимок: 16.07.2026 · период 30 дней</span> <span>Курс: 11 950 сум / $1</span> <span>Данные: ZoomSelling Seller+ · плагин на витрине</span></div>
+  </header>
+<section><div class="verdict verdict-warn">
+    <span class="badge">Вердикт · точечно / ранний заход</span>
+    <div class="vtext"><h3>Микро-ниша по размеру, но взрывной рост. Точечно — 1 премиум-SKU в раннюю волну.</h3><p>Ёмкость крошечная — <strong>≈ $4,1k/мес</strong> (49,5M сум, 1 030 шт), это ниже гейта $5–10k. Но ниша <strong>растёт +168% год к году</strong> (год назад её почти не было: 11 магазинов, 91 продажа) и <strong>почти не занята</strong> — 30 магазинов, 60 карточек, лидер остывает и держит лишь 378 отзывов. Продукт раскалывается на <strong>дешёвый одноразовый импорт</strong> (капкан фикс-сборов) и <strong>многоразовый премиум</strong> (Nella, 210K), где маржа здоровая (~30%). Разумный ход — <strong>1 дифференцированный премиум-SKU в раннюю волну</strong> + мониторинг роста, не основная ставка. Соседняя ниша послеродовых трусов (Joonies) кратно крупнее — держать как пивот.</p></div>
+  </div></section>
+<section><h2>Рынок ниши · менструальные трусы · 30 дней</h2>
+    <div class="kpis"><div class="kpi"><div class="lbl">Ёмкость</div><div class="big">49,5M</div><div class="sub up">сум · $4,1k · +168% г/г</div></div><div class="kpi"><div class="lbl">Продажи</div><div class="big">1 030</div><div class="sub">штук / мес</div></div><div class="kpi"><div class="lbl">Медиана листинга</div><div class="big">20 000</div><div class="sub">сум · ср. чек продаж ≈ 48K</div></div><div class="kpi"><div class="lbl">Оборот</div><div class="big">133</div><div class="sub">дня (по нише)</div></div></div>
+    <p style="margin-top:18px">В деньгах ниша микроскопическая — <a class="src" href="https://datastudio.google.com/u/0/reporting/245a870c-f547-473b-9da0-2e522f42fe54/page/p_0g5cwzsdfd">49,5M сум/мес ≈ $4,1k</a> и 1 030 продаж. Это отдельная ниша 4-го уровня <strong>красота и уход → личная гигиена → интимная гигиена → менструальные трусы</strong>. Продавцов <strong>30</strong>, активных (с продажами) <strong>50% ≈ 15</strong>; карточек <strong>60</strong>, продаётся <strong>64%</strong> — спрос вытягивает почти каждую карточку, потому что предложение крошечное. Медиана листинга <strong>20 000 сум</strong>, но средний чек продаж ≈ <strong>48 000 сум</strong> (дешёвых листингов много, продаётся середина). Оборот <strong>133 дня</strong> — капитал по нише в целом стоит долго.</p>
+    <div class="dims" style="margin-top:22px"><div class="dim"><span class="sdot r"></span><span class="dname">Ёмкость рынка</span><span class="dnote">микро: ≈ $4,1k/мес — ниже гейта $5–10k, хотя и растёт</span></div><div class="dim"><span class="sdot g"></span><span class="dname">Порог входа по капиталу</span><span class="dnote">низкий: лёгкий товар, landed $2–5, малые партии, $500–1000 на SKU</span></div><div class="dim"><span class="sdot a"></span><span class="dname">Конкуренция</span><span class="dnote">почти пусто (30 маг / 60 карт), но топ-3 = 59%; лидер остывает −18% м/м, неукоренён</span></div><div class="dim"><span class="sdot a"></span><span class="dname">Маржа commodity ~60K</span><span class="dnote">12,7% — тонкая; зона 20–40K (51% штук) — капкан фикс-сборов (~$2,5)</span></div><div class="dim"><span class="sdot g"></span><span class="dname">Маржа премиум многораз. 190K</span><span class="dnote">30,4% — здоровая; но объём тонкий (~33 шт/мес во всём премиум-бэнде)</span></div><div class="dim"><span class="sdot a"></span><span class="dname">Щель спроса / SEO</span><span class="dnote">нет выделенного ключа — трафик generic-белья (узб-heavy); молодая полоса, контестна</span></div><div class="dim"><span class="sdot g"></span><span class="dname">Сезонность</span><span class="dnote">несезонный товар (повторяющаяся потребность) — плюс для оборотного капитала; лёгкий пик март (8 марта)</span></div></div>
+  </section>
+<section><h2>Динамика рынка · 2026 + год к году</h2>
+    <h3>Год назад ниши почти не было — сейчас утроилась и продолжает расти</h3>
+    <p>Выручка ниши по календарным месяцам — реальные данные <a class="src" href="https://datastudio.google.com/u/0/reporting/245a870c-f547-473b-9da0-2e522f42fe54/page/p_0g5cwzsdfd">ZoomSelling → Ниши</a> (помесячные пресеты периода). За <strong>янв–июн 2026 объём ниши — 196,8M сум (≈ $16,5k) и 3 353 продажи</strong>. Год к году — взрыв: <strong>июнь '25 → '26 = 8,2M → 42,4M (+417%)</strong>, <strong>июль '25 → '26 = 18,5M → 49,5M (+168%)</strong>. В июне '25 нишу делали лишь 11 магазинов и 19 карточек — это <strong>рождающаяся категория</strong>, а не устоявшийся рынок.</p>
+    <div class="tw" style="padding:8px 4px"><svg viewBox="0 0 860 344" width="100%" role="img" style="min-width:600px;display:block" xmlns="http://www.w3.org/2000/svg">
+<title>Помесячная выручка ниши</title>
+<line x1="60" y1="300" x2="820" y2="300" stroke="var(--ink)"/>
+<text x="52" y="304" text-anchor="end" font-size="11" font-family="var(--mono)" fill="var(--faint)">0</text>
+<line x1="60" y1="240" x2="820" y2="240" stroke="var(--line)"/>
+<text x="52" y="244" text-anchor="end" font-size="11" font-family="var(--mono)" fill="var(--faint)">12,5</text>
+<line x1="60" y1="180" x2="820" y2="180" stroke="var(--line)"/>
+<text x="52" y="184" text-anchor="end" font-size="11" font-family="var(--mono)" fill="var(--faint)">25</text>
+<line x1="60" y1="120" x2="820" y2="120" stroke="var(--line)"/>
+<text x="52" y="124" text-anchor="end" font-size="11" font-family="var(--mono)" fill="var(--faint)">37,5</text>
+<line x1="60" y1="60" x2="820" y2="60" stroke="var(--line)"/>
+<text x="52" y="64" text-anchor="end" font-size="11" font-family="var(--mono)" fill="var(--faint)">50</text>
+<rect x="82.3" y="154.6" width="64.1" height="145.4" rx="2" fill="var(--accent)"/>
+<text x="114.3" y="148.6" text-anchor="middle" font-size="11.5" font-family="var(--mono)" fill="var(--muted)">30,3</text>
+<text x="114.3" y="320" text-anchor="middle" font-size="10.5" font-family="var(--mono)" fill="var(--ink)">Янв</text>
+<rect x="190.8" y="176.2" width="64.1" height="123.8" rx="2" fill="var(--accent)"/>
+<text x="222.9" y="170.2" text-anchor="middle" font-size="11.5" font-family="var(--mono)" fill="var(--muted)">25,8</text>
+<text x="222.9" y="320" text-anchor="middle" font-size="10.5" font-family="var(--mono)" fill="var(--muted)">Фев</text>
+<rect x="299.4" y="117.1" width="64.1" height="182.9" rx="2" fill="var(--accent)"/>
+<text x="331.4" y="111.1" text-anchor="middle" font-size="11.5" font-family="var(--mono)" fill="var(--accent-ink)">38,1</text>
+<text x="331.4" y="40" text-anchor="middle" font-size="10.5" font-family="var(--mono)" fill="var(--accent-ink)">локальный пик · 8 марта</text>
+<text x="331.4" y="320" text-anchor="middle" font-size="10.5" font-family="var(--mono)" fill="var(--ink)">Мар</text>
+<rect x="408.0" y="161.3" width="64.1" height="138.7" rx="2" fill="var(--accent)"/>
+<text x="440.0" y="155.3" text-anchor="middle" font-size="11.5" font-family="var(--mono)" fill="var(--muted)">28,9</text>
+<text x="440.0" y="320" text-anchor="middle" font-size="10.5" font-family="var(--mono)" fill="var(--muted)">Апр</text>
+<rect x="516.5" y="149.8" width="64.1" height="150.2" rx="2" fill="var(--accent)"/>
+<text x="548.6" y="143.8" text-anchor="middle" font-size="11.5" font-family="var(--mono)" fill="var(--muted)">31,3</text>
+<text x="548.6" y="320" text-anchor="middle" font-size="10.5" font-family="var(--mono)" fill="var(--muted)">Май</text>
+<rect x="625.1" y="96.5" width="64.1" height="203.5" rx="2" fill="var(--accent)"/>
+<text x="657.1" y="90.5" text-anchor="middle" font-size="11.5" font-family="var(--mono)" fill="var(--muted)">42,4</text>
+<text x="657.1" y="320" text-anchor="middle" font-size="10.5" font-family="var(--mono)" fill="var(--muted)">Июн</text>
+<rect x="733.7" y="62.4" width="64.1" height="237.6" rx="2" fill="var(--accent)" opacity="0.45"/>
+<text x="765.7" y="56.4" text-anchor="middle" font-size="11.5" font-family="var(--mono)" fill="var(--faint)">49,5</text>
+<text x="765.7" y="320" text-anchor="middle" font-size="10.5" font-family="var(--mono)" fill="var(--faint)">Июл*</text>
+<text x="765.7" y="336" text-anchor="middle" font-size="10" font-family="var(--mono)" fill="var(--good)">+168% г/г</text>
+</svg></div>
+    <div class="legend" style="margin-top:4px"><span><i style="background:var(--accent)"></i> выручка ниши, млн сум/мес (реальные данные)</span></div>
+    <div class="tw"><table class="pl"><thead><tr><th>Месяц</th><th class="n">Выручка</th><th class="n">Продажи, шт</th><th class="n">Δ мес</th></tr></thead><tbody><tr><td>Январь</td><td class="n">30,3M</td><td class="n">486</td><td class="n ">—</td></tr><tr><td>Февраль</td><td class="n">25,8M</td><td class="n">439</td><td class="n neg">−15%</td></tr><tr><td>Март (8 марта)</td><td class="n">38,1M</td><td class="n">627</td><td class="n pos">+48%</td></tr><tr><td>Апрель</td><td class="n">28,9M</td><td class="n">453</td><td class="n neg">−24%</td></tr><tr><td>Май</td><td class="n">31,3M</td><td class="n">522</td><td class="n pos">+8%</td></tr><tr><td>Июнь</td><td class="n">42,4M</td><td class="n">826</td><td class="n pos">+35%</td></tr><tr class="lead"><td>Итого янв–июн</td><td class="n">196,8M</td><td class="n">3 353</td><td class="n ">—</td></tr><tr><td>Июль (30 дн)*</td><td class="n">49,5M</td><td class="n">1 030</td><td class="n pos">+17%</td></tr></tbody></table></div>
+    <p style="margin-top:10px;font-size:12.5px;color:var(--faint)">* Июль — скользящие последние 30 дней (16.06–16.07), не полный календарный месяц. Δ мес — к предыдущему периоду.</p>
+    <div class="call"><div class="ct">Как читать</div><p style="margin:0;color:var(--muted);font-size:14.5px">Главное — не абсолют, а траектория. <strong>Год назад ниши практически не существовало</strong> (июнь '25: 8,2M, 91 продажа, 11 магазинов, 19 карточек), сейчас — 42–49M/мес и 30 магазинов. Рост +168…+417% г/г. Внутри 2026 — устойчивый подъём (25–30M зимой → 42–49M летом) с локальным всплеском в марте (8 марта). Менструальные трусы — <strong>несезонный товар</strong> (потребность повторяется каждый месяц), что хорошо для оборотного капитала. Стратегический вывод: это <strong>ранняя волна растущей микро-ниши</strong> — заходить рано и точечно, наблюдать, при сохранении темпа — пересматривать.</p></div>
+  </section>
+<section><h2>Конкуренты · кто и на чём</h2>
+    <p>Ниша раскалывается на два продукта. <strong>Одноразовые</strong> впитывающие/послеродовые трусы (дешёвый китайский импорт, объём) и <strong>многоразовые</strong> менструальные трусы (премиум, здоровая маржа). Лидер по 30-дневной выручке — дешёвая одноразовая карточка <strong>SILK</strong> (11,4M, 190 шт), но у неё лишь 378 отзывов и она остывает. Премиум держит одна карточка — <strong>Nella</strong> (многоразовые, 210K).</p>
+    <div class="tw"><table><thead><tr><th>Товар (карточка)</th><th class="n">Цена, сум</th><th class="n">Отзывы</th><th class="n">Выручка/мес</th></tr></thead><tbody><tr class="lead"><td><a class="src" href="https://uzum.uz/ru/product/menstrualnye-trusy-odnorazovye-1591495">Менструальные трусы одноразовые, 360°, 6 шт — SILK / Lily Rose</a></td><td class="n">59 990</td><td class="n">378</td><td class="n rev">11,4M</td></tr><tr><td><a class="src" href="https://uzum.uz/ru/product/mnogorazovye-menstrualnye-trusy-temno-sinij---209-1204799">Многоразовые менструальные трусы Nella, XS-XXL (премиум)</a></td><td class="n">210 000</td><td class="n">36</td><td class="n">3,1M</td></tr><tr><td>Женские трусики с защитой, чёрные, многоразовые, 4 шт — HOPURI.UZ</td><td class="n">79 000</td><td class="n">20</td><td class="n">3,1M</td></tr><tr><td>BOTARE женские менструальные, мягкая ткань — KHAQAN INVESTMENTS</td><td class="n">45 900</td><td class="n">21</td><td class="n">3,1M</td></tr><tr><td>Трусики послеродовые одноразовые, 360°, 6 шт — Cozy hug</td><td class="n">63 100</td><td class="n">18</td><td class="n">3,0M</td></tr><tr><td>Менструальные трусы одноразовые 3/6 шт — boomy / MARYAMIK</td><td class="n">29 990</td><td class="n">25</td><td class="n">2,0M</td></tr></tbody></table></div>
+    <p style="margin-top:14px;font-size:13px;color:var(--faint)">Витрина ниши — <a class="src" href="https://uzum.uz/ru/search?query=%D1%82%D1%80%D1%83%D1%81%D1%8B%20%D0%BC%D0%B5%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5">поиск «трусы менструальные» на Uzum</a> (203 товара в 11 категориях — витрина смешивает соседние ниши). <strong>Важно:</strong> самые крупные карточки в этой выдаче — <strong>Joonies (UNIVATION MCHJ)</strong>, 17,6M + 31,0M выручки — принадлежат <strong>соседней нише «трусы дородовые и послеродовые»</strong>, а не менструальным. Тот рынок кратно крупнее — кандидат на отдельный прогон/пивот.</p>
+  </section>
+<section><h2>Топ-карточки · моментум лидера</h2>
+    <h3>Никто не укоренён — даже лидер остывает</h3>
+    <p>Продажи карточки-лидера SILK по 30-дневным окнам — данные <a class="src" href="https://uzum.uz/ru/product/menstrualnye-trusy-odnorazovye-1591495">плагина ZoomSelling на карточке, prod_id 1591495</a>. За 60 дней — 421 продажа и 25,3M выручки; из них последние 30 дней — <strong>190 шт против 231 в предыдущие</strong>. То есть лидер <strong>остыл на −18% за месяц</strong> при упущенной выручке 0 (товар в наличии) — это спад спроса на конкретную карточку, а не out-of-stock. Оборот карточки 27 дней — она затарена и оборачивается быстро.</p>
+    <div class="tw" style="padding:8px 4px"><svg viewBox="0 0 860 300" width="100%" role="img" style="min-width:520px;display:block" xmlns="http://www.w3.org/2000/svg">
+<title>Моментум карточки-лидера по 30-дневным окнам</title>
+<line x1="60" y1="235" x2="820" y2="235" stroke="var(--ink)"/>
+<text x="52" y="239" text-anchor="end" font-size="11" font-family="var(--mono)" fill="var(--faint)">0</text>
+<line x1="60" y1="142" x2="820" y2="142" stroke="var(--line)"/>
+<text x="52" y="146" text-anchor="end" font-size="11" font-family="var(--mono)" fill="var(--faint)">125</text>
+<line x1="60" y1="50" x2="820" y2="50" stroke="var(--line)"/>
+<text x="52" y="54" text-anchor="end" font-size="11" font-family="var(--mono)" fill="var(--faint)">250</text>
+<rect x="200" y="64.1" width="180" height="170.9" rx="2" fill="var(--accent)" opacity="0.5"/>
+<rect x="500" y="94.4" width="180" height="140.6" rx="2" fill="var(--accent)"/>
+<text x="290" y="56.1" text-anchor="middle" font-size="13" font-family="var(--mono)" fill="var(--muted)">231</text>
+<text x="590" y="86.4" text-anchor="middle" font-size="13.5" font-family="var(--mono)" fill="var(--accent-ink)">190</text>
+<text x="590" y="70.4" text-anchor="middle" font-size="11" font-family="var(--mono)" fill="var(--good)">−18%</text>
+<text x="290" y="255" text-anchor="middle" font-size="11" font-family="var(--mono)" fill="var(--muted)">предыдущие 30 дн</text>
+<text x="590" y="255" text-anchor="middle" font-size="11" font-family="var(--mono)" fill="var(--ink)">последние 30 дн</text>
+<text x="440" y="285" text-anchor="middle" font-size="11" font-family="var(--mono)" fill="var(--faint)">продажи карточки-лидера SILK, шт · за 60 дн — 421 шт / 25,3M сум</text>
+</svg></div>
+    <p style="margin-top:6px">Текущее положение самых больших карточек ниши (продажи за 30 дней, данные плагина на <a class="src" href="https://uzum.uz/ru/search?query=%D1%82%D1%80%D1%83%D1%81%D1%8B%20%D0%BC%D0%B5%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5">витрине Uzum</a>):</p>
+    <div class="tw"><table class="pl"><thead><tr><th>Карточка</th><th class="n">Продаж/мес</th><th class="n">Выручка/мес</th><th>Тренд</th></tr></thead><tbody><tr class="lead"><td>SILK одноразовые (лидер)</td><td class="n">190</td><td class="n">11,4M</td><td class="neg">−18% · остывает</td></tr><tr><td>BOTARE одноразовые (KHAQAN)</td><td class="n">111</td><td class="n">3,1M</td><td class="">дешёвый объём (остаток 2 068)</td></tr><tr><td>boomy одноразовые</td><td class="n">55</td><td class="n">2,0M</td><td class="">хвост</td></tr><tr><td>Nella многоразовые (премиум)</td><td class="n">15</td><td class="n">3,1M</td><td class="">204K/ед · премиум</td></tr></tbody></table></div>
+    <div class="call"><div class="ct">Что это меняет в решении</div><p style="margin:0;color:var(--muted);font-size:14.5px">Лидер <strong>не укоренён</strong>: 378 отзывов (у соседних послеродовых Joonies — 388–435), и он <strong>остывает −18% м/м</strong>. Большинство карточек ниши держат 15–40 отзывов — рынок молодой, прочного №1 нет. Это <strong>окно для входа</strong>: место в топе не занято намертво, свежая сильная карточка может подняться. Обратная сторона — при 30 магазинах и 60 карточках любой заметный новый игрок сразу двигает доли, конкуренция включится быстро.</p></div>
+  </section>
+<section><h2>Распределение объёма · продавцы и цены</h2>
+    <h3>Импортный рынок, деньги и маржа — в премиум-многоразовых</h3>
+    <p>Как делится объём ниши (последние 30 дней, 49,5M сум / 1 030 шт, данные <a class="src" href="https://datastudio.google.com/u/0/reporting/245a870c-f547-473b-9da0-2e522f42fe54/page/p_usw9zoa0cd">ZoomSelling → Селлеры</a> и <a class="src" href="https://datastudio.google.com/u/0/reporting/245a870c-f547-473b-9da0-2e522f42fe54/page/p_tr557t9i5d">Ценовая сегментация</a>).</p>
+    <h3 style="font-size:16px;margin-top:22px">Топ-продавцы против остальных</h3>
+    <div class="tw" style="padding:8px 4px"><svg viewBox="0 0 860 122" width="100%" role="img" style="min-width:600px;display:block" xmlns="http://www.w3.org/2000/svg">
+<title>Доля топ-продавцов в нише</title>
+<rect x="40.0" y="45" width="179.6" height="46" fill="var(--accent)" opacity="1.0"/>
+<text x="129.8" y="37" text-anchor="middle" font-size="11.5" font-family="var(--mono)" fill="var(--accent-ink)">23,0%</text>
+<text x="129.8" y="108" text-anchor="middle" font-size="9.5" font-family="var(--mono)" fill="var(--muted)">XOLIQOVA</text>
+<rect x="219.6" y="45" width="173.1" height="46" fill="var(--accent)" opacity="0.62"/>
+<text x="306.1" y="37" text-anchor="middle" font-size="11.5" font-family="var(--mono)" fill="var(--muted)">22,2%</text>
+<text x="306.1" y="108" text-anchor="middle" font-size="9.5" font-family="var(--mono)" fill="var(--faint)">KHAQAN</text>
+<rect x="392.6" y="45" width="106.0" height="46" fill="var(--accent)" opacity="0.38"/>
+<text x="445.6" y="37" text-anchor="middle" font-size="11.5" font-family="var(--mono)" fill="var(--muted)">13,6%</text>
+<text x="445.6" y="108" text-anchor="middle" font-size="9.5" font-family="var(--mono)" fill="var(--faint)">NELLA</text>
+<rect x="498.6" y="45" width="321.4" height="46" fill="var(--muted)" opacity="0.25" stroke="var(--line)"/>
+<text x="659.3" y="72" text-anchor="middle" font-size="12.5" font-family="var(--mono)" fill="var(--muted)">Остальные ≈ 27 продавцов · 41,2%</text>
+</svg></div>
+    <div class="tw"><table class="pl"><thead><tr><th>Продавец (юрлицо)</th><th class="n">Выручка</th><th class="n">Доля ниши</th><th class="n">Продажи</th></tr></thead><tbody><tr class="lead"><td>ИП XOLIQOVA YULDIZ (SILK, одноразовые)</td><td class="n">11,4M</td><td class="n">23,02%</td><td class="n">190</td></tr><tr><td>«KHAQAN INVESTMENTS GROUP» MCHJ (BOTARE)</td><td class="n">11,0M</td><td class="n">22,19%</td><td class="n">393</td></tr><tr><td>«NELLA» MCHJ (премиум многоразовые)</td><td class="n">6,7M</td><td class="n">13,59%</td><td class="n">33</td></tr><tr class="lead"><td>Топ-3 вместе</td><td class="n">29,1M</td><td class="n">58,80%</td><td class="n">616</td></tr><tr><td>Остальные ≈ 27 продавцов</td><td class="n">20,4M</td><td class="n">41,20%</td><td class="n">≈ 414</td></tr></tbody></table></div>
+    <h3 style="font-size:16px;margin-top:28px">Товары по ценовым сегментам</h3>
+    <div class="tw" style="padding:8px 4px"><svg viewBox="0 0 860 342" width="100%" role="img" style="min-width:600px;display:block" xmlns="http://www.w3.org/2000/svg">
+<title>Распределение выручки и штук по ценовым сегментам</title>
+<line x1="60" y1="300" x2="820" y2="300" stroke="var(--ink)"/>
+<text x="52" y="304" text-anchor="end" font-size="11" font-family="var(--mono)" fill="var(--faint)">0%</text>
+<line x1="60" y1="235" x2="820" y2="235" stroke="var(--line)"/>
+<text x="52" y="239" text-anchor="end" font-size="11" font-family="var(--mono)" fill="var(--faint)">15%</text>
+<line x1="60" y1="170" x2="820" y2="170" stroke="var(--line)"/>
+<text x="52" y="174" text-anchor="end" font-size="11" font-family="var(--mono)" fill="var(--faint)">30%</text>
+<line x1="60" y1="105" x2="820" y2="105" stroke="var(--line)"/>
+<text x="52" y="109" text-anchor="end" font-size="11" font-family="var(--mono)" fill="var(--faint)">45%</text>
+<line x1="60" y1="40" x2="820" y2="40" stroke="var(--line)"/>
+<text x="52" y="44" text-anchor="end" font-size="11" font-family="var(--mono)" fill="var(--faint)">60%</text>
+<rect x="94" y="160.0" width="38" height="140.0" fill="var(--accent)"/>
+<rect x="140" y="78.1" width="38" height="221.9" fill="#d4537e"/>
+<text x="113" y="154.0" text-anchor="middle" font-size="10.5" font-family="var(--mono)" fill="var(--accent-ink)">32%</text>
+<text x="159" y="72.1" text-anchor="middle" font-size="10.5" font-family="var(--mono)" fill="#993556">51%</text>
+<text x="113" y="320" text-anchor="middle" font-size="10.5" font-family="var(--mono)" fill="var(--ink)">20–40K</text>
+<rect x="246" y="254.5" width="38" height="45.5" fill="var(--accent)"/>
+<rect x="292" y="254.9" width="38" height="45.1" fill="#d4537e"/>
+<text x="265" y="248.5" text-anchor="middle" font-size="10.5" font-family="var(--mono)" fill="var(--accent-ink)">10%</text>
+<text x="311" y="248.9" text-anchor="middle" font-size="10.5" font-family="var(--mono)" fill="#993556">10%</text>
+<text x="265" y="320" text-anchor="middle" font-size="10.5" font-family="var(--mono)" fill="var(--ink)">40–60K</text>
+<rect x="398" y="170.4" width="38" height="129.6" fill="var(--accent)"/>
+<rect x="444" y="185.6" width="38" height="114.4" fill="#d4537e"/>
+<text x="417" y="164.4" text-anchor="middle" font-size="10.5" font-family="var(--mono)" fill="var(--accent-ink)">30%</text>
+<text x="463" y="179.6" text-anchor="middle" font-size="10.5" font-family="var(--mono)" fill="#993556">26%</text>
+<text x="417" y="320" text-anchor="middle" font-size="10.5" font-family="var(--mono)" fill="var(--ink)">60–80K</text>
+<rect x="550" y="240.6" width="38" height="59.4" fill="var(--accent)"/>
+<rect x="596" y="261.9" width="38" height="38.1" fill="#d4537e"/>
+<text x="569" y="234.6" text-anchor="middle" font-size="10.5" font-family="var(--mono)" fill="var(--accent-ink)">14%</text>
+<text x="615" y="255.9" text-anchor="middle" font-size="10.5" font-family="var(--mono)" fill="#993556">9%</text>
+<text x="569" y="320" text-anchor="middle" font-size="10.5" font-family="var(--mono)" fill="var(--ink)">80–100K</text>
+<rect x="702" y="241.5" width="38" height="58.5" fill="var(--accent)"/>
+<rect x="748" y="286.1" width="38" height="13.9" fill="#d4537e"/>
+<text x="721" y="235.5" text-anchor="middle" font-size="10.5" font-family="var(--mono)" fill="var(--accent-ink)">14%</text>
+<text x="767" y="280.1" text-anchor="middle" font-size="10.5" font-family="var(--mono)" fill="#993556">3%</text>
+<text x="721" y="320" text-anchor="middle" font-size="10.5" font-family="var(--mono)" fill="var(--ink)">200K+</text>
+</svg></div>
+    <div class="legend" style="margin-top:4px"><span><i style="background:var(--accent)"></i> доля выручки</span><span><i style="background:#d4537e"></i> доля штук</span><span>сегменты в сум</span></div>
+    <div class="tw"><table class="pl"><thead><tr><th>Ценовой сегмент</th><th class="n">Выручка</th><th class="n">% выручки</th><th class="n">Продажи</th><th class="n">% штук</th></tr></thead><tbody><tr class="lead"><td>20 000–40 000 (капкан фикс-сборов)</td><td class="n">16,0M</td><td class="n">32,3%</td><td class="n">527</td><td class="n">51,2%</td></tr><tr><td>40 000–60 000 (провал)</td><td class="n">5,2M</td><td class="n">10,5%</td><td class="n">107</td><td class="n">10,4%</td></tr><tr><td>60 000–80 000 (рабочая середина)</td><td class="n">14,8M</td><td class="n">29,9%</td><td class="n">272</td><td class="n">26,4%</td></tr><tr><td>80 000–100 000 (выше среднего)</td><td class="n">6,8M</td><td class="n">13,7%</td><td class="n">91</td><td class="n">8,8%</td></tr><tr><td>200 000–220 000 (премиум многоразовые)</td><td class="n">6,7M</td><td class="n">13,5%</td><td class="n">33</td><td class="n">3,2%</td></tr></tbody></table></div>
+    <div class="call"><div class="ct">Что это меняет в решении</div><p style="margin:0;color:var(--muted);font-size:14.5px"><strong>Продавцы:</strong> топ-3 держат 59% (XOLIQOVA 23%, KHAQAN 22%, NELLA 14%), но всего продавцов ≈ 30 — рынок не столько консолидирован, сколько <strong>мал</strong>. Природа — <strong>импорт</strong>: узбекские ИП-реселлеры + прямые китайские (ZHANG, VU JUNFENG); локального производственного моата нет, новый импортёр на равных. Премиум держит одно юрлицо — NELLA MCHJ. <strong>Цены — бимодально:</strong> дешёвый хвост <strong>20–40K = 51% штук</strong> (avg 30K ≈ $2,5, капкан фикс-сборов), рабочая середина <strong>60–80K = 26% штук</strong> (avg 54K), и тонкий, но денежный <strong>премиум 200K+ = 14% выручки с 3% штук</strong> (avg 203K ≈ $17, многоразовые). Диапазон 100–200K пуст. Деньги и маржа — в премиум-многоразовых.</p></div>
+  </section>
+<section><h2>Пять находок для решения</h2><div class="finds"><div class="find"><div class="fn">01</div><div><div class="ft">Ниша утроилась за год — рождающаяся категория</div><p>Июль 2026 — 49,5M против <a class="src" href="https://datastudio.google.com/u/0/reporting/245a870c-f547-473b-9da0-2e522f42fe54/page/p_0g5cwzsdfd">18,5M год назад</a> (+168%); июнь и вовсе +417%. В июне '25 нишу делали 11 магазинов и 19 карточек. Это не устоявшийся рынок, а <strong>ранняя волна</strong> — заходить по тренду, а не против.</p></div></div><div class="find"><div class="fn">02</div><div><div class="ft">Продукт раскалывается: дешёвый импорт vs премиум-многоразовые</div><p>Объём — в дешёвых одноразовых (20–40K, китайский импорт, капкан фикс-сборов ~$2,5). Деньги и <strong>здоровая маржа</strong> — в многоразовых 200K+ (Nella), где 14% выручки с 3% штук и ~30% маржи. Мировой тренд «period underwear» — именно многоразовые; на Uzum эта полка держится одним игроком.</p></div></div><div class="find"><div class="fn">03</div><div><div class="ft">Никто не укоренён — окно для входа открыто</div><p>Лидер SILK — 378 отзывов и <strong>остывает −18% м/м</strong>; большинство карточек 15–40 отзывов. Прочного №1 нет, свежая сильная карточка может подняться. Но рынок крошечный (30 магазинов): любой заметный вход сразу двигает доли.</p></div></div><div class="find"><div class="fn">04</div><div><div class="ft">Соседняя послеродовая ниша кратно крупнее</div><p>В витринной выдаче «трусы менструальные» две карточки <strong>Joonies (UNIVATION MCHJ)</strong> дают 17,6M + 31,0M — больше, чем вся менструальная ниша (49,5M). Но они в <strong>соседней нише «дородовые и послеродовые»</strong>. Это готовый пивот — прогнать её отдельно, там денег больше.</p></div></div><div class="find"><div class="fn">05</div><div><div class="ft">SEO без выделенного ключа — трафик generic-белья</div><p>Нишевого ключа «менструальные трусы» в топе охватов у лидера нет; трафик идёт от generic-белья, узбекско-доминантного: <strong>ichki kiyimlar</strong> (8,0k), <strong>ayollar uchun ichki kiyim</strong> (5,7k), русское «интимные товары» (10,1k). Лидер висит глубоко (поз. 60–98). Полоса молодая — её можно занять грамотной двуязычной карточкой.</p></div></div></div></section>
+<section><h2>Юнит-экономика · на 1 единицу</h2>
+    <h3>Премиум многораз. 190K против «Одноразовые 60K»</h3>
+    <p>Слева — рекомендуемый вариант: <strong>многоразовые менструальные трусы, премиум</strong> (ASP 190 000 сум — на ступень ниже Nella 210K, landed 55 000 при импорте из Китая). Справа — <strong>одноразовые commodity</strong> (6 шт, 60 000). Обе при целевом ДРР 20% (ранний старт в молодой нише). Комиссия принята 15% ориентировочно — реальная ставка категории «интимная гигиена» берётся из тарифника Uzum (см. закуп-калькулятор).</p>
+    <div class="tw"><table class="pl"><thead><tr><th>Статья</th><th class="n">Премиум многораз. 190K</th><th class="n">Одноразовые 60K</th></tr></thead><tbody><tr><td>Цена продажи (ASP)</td><td class="n">190 000</td><td class="n">60 000</td></tr><tr><td>Себестоимость landed</td><td class="n">-55 000</td><td class="n">-22 000</td></tr><tr><td>Комиссия Uzum</td><td class="n">-28 500</td><td class="n">-9 000</td></tr><tr><td>Логистика Uzum</td><td class="n">-6 500</td><td class="n">-6 500</td></tr><tr><td>Упаковка + хранение</td><td class="n">-1 700</td><td class="n">-1 700</td></tr><tr><td>Вывод + резерв возврата</td><td class="n">-2 460</td><td class="n">-1 160</td></tr><tr><td>Реклама (ДРР)</td><td class="n">-38 000</td><td class="n">-12 000</td></tr><tr><td><strong>Чистая прибыль / ед.</strong></td><td class="n pos">57 840 <span class="pct">30,4%</span></td><td class="n">7 640 <span class="pct">12,7%</span></td></tr><tr><td>ROI на закупку</td><td class="n pos">105,2%</td><td class="n">34,7%</td></tr><tr><td>Порог безубыт. ДРР</td><td class="n">50,4%</td><td class="n">32,7%</td></tr></tbody></table></div>
+    <p style="margin-top:14px">Разница решает: премиум-многоразовые дают <strong>~30% маржи ($4,84 с единицы)</strong> против <strong>~13% ($0,64)</strong> у одноразовых 60K. Дешёвая зона 20–40K, где сидит половина штук, при этом ещё тоньше — фикс-сборы Uzum съедают почти весь чек $2,5. Вывод: <strong>если заходить — то премиум-многоразовыми</strong>, где чек впитывает сборы и есть отстройка от единственного игрока; commodity-объём — гонка ко дну с китайским импортом.</p>
+    <h3 style="margin-top:30px">Калькулятор — покрутите допущения</h3>
+    <div class="calc"><div class="calc-grid">
+      <div class="inputs">
+        <div class="field"><label for="asp">Цена продажи (ASP)</label><div><input id="asp" class="num" type="number" value="190000"><span class="unit"> сум</span></div></div>
+        <div class="field"><label for="land">Себестоимость landed</label><div><input id="land" class="num" type="number" value="55000"><span class="unit"> сум</span></div></div>
+        <div class="field"><label for="comm">Комиссия Uzum</label><div><input id="comm" class="num" type="number" value="15"><span class="unit"> %</span></div></div>
+        <div class="field"><label for="logi">Логистика Uzum</label><div><input id="logi" class="num" type="number" value="6500"><span class="unit"> сум</span></div></div>
+        <div class="field"><label for="drr">ДРР (реклама)</label><div><input id="drr" class="num" type="number" value="20"><span class="unit"> %</span></div></div>
+      </div>
+      <div class="outs">
+        <div class="out hero"><span class="ol">Чистая прибыль / ед.</span><span class="ov" id="o_net">—</span></div>
+        <div class="out"><span class="ol">Чистая маржа</span><span class="ov" id="o_mar">—</span></div>
+        <div class="out"><span class="ol">ROI на закупку</span><span class="ov" id="o_roi">—</span></div>
+        <div class="out"><span class="ol">Порог безубыт. ДРР</span><span class="ov" id="o_be">—</span></div>
+      </div>
+    </div>
+    <p class="calc-note">Фиксировано: упаковка 1 000 + хранение 700 + вывод 1% от ASP + резерв возврата 7% × 8 000 сум. Прибыль в $ — по курсу 11 950. Зелёный ≥ 20% маржи · жёлтый 10–20% · красный &lt; 10%.</p>
+    </div>
+    <h3 style="margin-top:30px">Чувствительность маржи · ASP 190 000</h3>
+    <p>Для рекомендуемого премиум-варианта (ASP 190 000): чистая маржа при разных landed и ДРР. Ключевая неопределённость — себестоимость закупки многоразовых трусов из Китая и стоимость раннего трафика.</p>
+    <div class="tw"><table class="heat"><thead><tr><th>landed ↓ / ДРР →</th><th class="n">10%</th><th class="n">15%</th><th class="n">20%</th><th class="n">25%</th></tr></thead><tbody><tr><td>40 000</td><td class="c hg">48,3</td><td class="c hg">43,3</td><td class="c hg">38,3</td><td class="c hg">33,3</td></tr><tr><td>55 000 <span class="pct">база</span></td><td class="c hg">40,4</td><td class="c hg">35,4</td><td class="c hg">30,4</td><td class="c hg">25,4</td></tr><tr><td>70 000</td><td class="c hg">32,5</td><td class="c hg">27,5</td><td class="c hg">22,5</td><td class="c ha">17,5</td></tr><tr><td>85 000</td><td class="c hg">24,7</td><td class="c ha">19,7</td><td class="c ha">14,7</td><td class="c hr">9,7</td></tr></tbody></table></div>
+    <div class="legend"><span><i style="background:var(--good)"></i> ≥ 20% — здоровая</span><span><i style="background:var(--warn)"></i> 10–20% — терпимо</span><span><i style="background:var(--bad)"></i> &lt; 10% — не заходить</span></div>
+    <p style="margin-top:14px;font-size:13px;color:var(--faint)">Вывод: премиум-экономика держится в зелёной зоне, пока landed ≤ 70 000 сум и ДРР ≤ 20%. Даже дорогая закупка (85K) при умеренном ДРР остаётся рабочей — высокий чек защищает. Убивает не себестоимость, а дорогой трафик: в молодой нише ДРР на старте может уйти к 25–30%, и тогда нужен органический вход по двуязычным generic-ключам, а не только платный буст.</p>
+  </section>
+<section><h2>Тест одного SKU · как это выглядит в деньгах</h2>
+    <div class="tw"><table class="pl"><thead><tr><th>Параметр</th><th class="n">Значение</th></tr></thead><tbody><tr><td>Первая партия</td><td class="n">100 ед.</td></tr><tr><td>Закупка (landed 55 000)</td><td class="n">5,50M сум · ≈ $460</td></tr><tr><td>Прибыль с единицы (ДРР 20%)</td><td class="n pos">57 840 сум</td></tr><tr><td>Скорость продаж (допущение)</td><td class="n">≈ 25 ед. / мес</td></tr><tr><td>Окупаемость партии</td><td class="n">≈ 49 ед.</td></tr><tr><td>Прибыль за цикл</td><td class="n pos">5,78M сум · ≈ $484</td></tr></tbody></table></div>
+    <div class="call"><div class="ct">Как ложится в бюджет</div><p style="margin:0;color:var(--muted);font-size:14.5px">Один премиум-SKU (партия 100 шт × landed 55 000) занимает ≈ <strong>5,5M сум ($460)</strong> оборотного капитала — окупаемость ~57 шт, при продаже ~25 шт/мес это ~2,5 месяца до возврата закупки. Ниша <strong>не тянет крупную ставку</strong> (весь премиум-бэнд ~33 шт/мес): реалистично 1–2 SKU в раннюю волну + резерв под дозаказ. При сохранении темпа +100% г/г ниша за год удвоится — тогда пересматривать на полноценный вход.</p></div>
+  </section>
+<section><h2>Что дальше</h2><ul><li>Зафиксировать канал: <strong>многоразовые менструальные трусы из Китая</strong> (period panties, впитывающий слой), landed ~$4,6. Проверить MOQ и лид-тайм.</li><li>Определить формат под премиум 150–190K: <strong>многоразовые впитывающие трусы</strong>, отстройка от единственного игрока Nella (36 отзывов) — размерная линейка (XS–XXL), уровни впитывания, дизайн, бренд.</li><li>Собрать карточку под <strong>двуязычные generic-ключи</strong> (ichki kiyimlar, ayollar uchun ichki kiyim) + нишевые «менструальные / многоразовые трусы» — узбекский трафик недоокучен.</li><li>Прогнать <strong>соседнюю нишу послеродовых трусов</strong> (Joonies/UNIVATION) отдельным прогоном — денег там кратно больше, это возможный основной вход.</li><li>Поставить нишу и выбранный SKU на <strong>мониторинг</strong> (skill uzum-card-monitor) — при сохранении +100% г/г пересмотреть вердикт на полноценную ставку.</li><li>Прогнать финальный SKU через <strong>закуп-калькулятор</strong> с реальной комиссией категории из тарифника Uzum.</li></ul></section>
+<section><h2>Источники · провалиться в аналитику</h2>
+    <div class="srclist"><div class="srcrow"><div class="sl">Метрики ниши (ёмкость, оборот, продавцы, помесячно, YoY)<small>ZoomSelling → Ниши · фильтр: менструальные трусы</small></div><a href="https://datastudio.google.com/u/0/reporting/245a870c-f547-473b-9da0-2e522f42fe54/page/p_0g5cwzsdfd">открыть ↗</a></div><div class="srcrow"><div class="sl">Ценовые сегменты (шаг 20K)<small>ZoomSelling → Ценовая сегментация · Красота и уход → менструальные трусы</small></div><a href="https://datastudio.google.com/u/0/reporting/245a870c-f547-473b-9da0-2e522f42fe54/page/p_tr557t9i5d">открыть ↗</a></div><div class="srcrow"><div class="sl">Распределение по продавцам (доли, топ-3, юрлица)<small>ZoomSelling → Магазины и селлеры → Селлеры</small></div><a href="https://datastudio.google.com/u/0/reporting/245a870c-f547-473b-9da0-2e522f42fe54/page/p_usw9zoa0cd">открыть ↗</a></div><div class="srcrow"><div class="sl">Витрина «трусы менструальные» + плагин по карточкам<small>Uzum Market · 203 товара в 11 категориях (выдача смешивает соседние ниши)</small></div><a href="https://uzum.uz/ru/search?query=%D1%82%D1%80%D1%83%D1%81%D1%8B%20%D0%BC%D0%B5%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5">открыть ↗</a></div><div class="srcrow"><div class="sl">Карточка-лидер: моментум (30/60 дн), упущенная выручка, SEO-ключи<small>Uzum · SILK одноразовые 6 шт · prod_id 1591495</small></div><a href="https://uzum.uz/ru/product/menstrualnye-trusy-odnorazovye-1591495">открыть ↗</a></div></div>
+    <p class="foot">Ссылки ZoomSelling открываются под вашим Google-аккаунтом (доступ Seller+). Фильтр ниши применяется через контрол «поиск ниш» (Красота и уход → личная гигиена → интимная гигиена → менструальные трусы). Допущения юнит-экономики: комиссия Uzum принята 15% ориентировочно — реальную ставку категории «интимная гигиена» брать из тарифника (в заметках она может быть завышена/занижена); тариф логистики и резерв возврата — оценки; себестоимость landed принята для канала «Китай», требует проверки MOQ и лид-тайма. Момент лидера (слой 6) снят по одной карточке через плагин (30/60-дн окна → разность). Соседняя ниша послеродовых трусов не изолировалась в ZoomSelling — цифры Joonies взяты с витринного overlay. Снимок данных: 16.07.2026, период 30 дней (динамика — 2026 помесячно + YoY-якоря '25).</p>
+  </section>
+<section style="border-bottom:none;padding-bottom:8px"><h2>Сборка · модель · статус</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-bottom:22px">
+      <div class="call" style="margin-top:0"><div class="ct">Собрано агентной системой</div><p style="margin:0;font-family:var(--mono);font-size:14px;color:var(--ink)">Constantin_Project4_Uzum_AgenticV1.1</p></div>
+      <div class="call" style="margin-top:0"><div class="ct">Модель</div><p style="margin:0;font-family:var(--mono);font-size:14px;color:var(--ink)">Opus 4.8</p></div>
+    </div>
+    <div class="ct" style="margin-bottom:12px;font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)">Открытые вопросы — на утверждение</div>
+    <div style="display:flex;flex-direction:column;gap:11px"><div style="display:flex;align-items:center;gap:12px"><span style="width:17px;height:17px;border:1.5px solid var(--faint);border-radius:4px;flex:0 0 auto"></span><span style="font-size:15px;color:var(--ink)">Утвердить вердикт: точечно (1 премиум-SKU) vs наблюдать без входа vs пивот в послеродовые</span></div><div style="display:flex;align-items:center;gap:12px"><span style="width:17px;height:17px;border:1.5px solid var(--faint);border-radius:4px;flex:0 0 auto"></span><span style="font-size:15px;color:var(--ink)">Утвердить фин-модель (landed многоразовых / комиссия из тарифника / возврат)</span></div><div style="display:flex;align-items:center;gap:12px"><span style="width:17px;height:17px;border:1.5px solid var(--faint);border-radius:4px;flex:0 0 auto"></span><span style="font-size:15px;color:var(--ink)">Выбрать канал закупки: импорт Китай (period panties)</span></div><div style="display:flex;align-items:center;gap:12px"><span style="width:17px;height:17px;border:1.5px solid var(--faint);border-radius:4px;flex:0 0 auto"></span><span style="font-size:15px;color:var(--ink)">Решить, прогонять ли соседнюю нишу послеродовых трусов как основную</span></div></div>
+  </section>
+</div></div>
+<script>
+(function(){
+  var ids=["asp","land","comm","logi","drr"];
+  function fmt(n){return Math.round(n).toLocaleString("ru-RU").replace(/,/g," ");}
+  function col(el,m){el.style.color = m>=20?"var(--good)":m>=10?"var(--warn)":"var(--bad)";}
+  function calc(){
+    var ASP=+document.getElementById("asp").value||0;
+    var L=+document.getElementById("land").value||0;
+    var comm=(+document.getElementById("comm").value||0)/100;
+    var logi=+document.getElementById("logi").value||0;
+    var drr=(+document.getElementById("drr").value||0)/100;
+    var pack=1000, stor=700, wd=ASP*0.01, ret=0.07*8000;
+    var costsNoAds = L + ASP*comm + logi + pack + stor + wd + ret;
+    var beforeAds = ASP - costsNoAds;
+    var net = beforeAds - ASP*drr;
+    var margin = ASP>0 ? net/ASP*100 : 0;
+    var roi = L>0 ? net/L*100 : 0;
+    var beDrr = ASP>0 ? beforeAds/ASP*100 : 0;
+    var usd = net/11950;
+    var netEl=document.getElementById("o_net"), marEl=document.getElementById("o_mar");
+    netEl.textContent = fmt(net)+" сум  ($"+usd.toFixed(2)+")";
+    marEl.textContent = margin.toFixed(1)+"%";
+    document.getElementById("o_roi").textContent = roi.toFixed(1)+"%";
+    document.getElementById("o_be").textContent = beDrr.toFixed(1)+"%";
+    col(netEl,margin); col(marEl,margin);
+  }
+  ids.forEach(function(id){var e=document.getElementById(id); if(e){e.addEventListener("input",calc);}});
+  calc();
+})();
+</script>
+</body></html>
